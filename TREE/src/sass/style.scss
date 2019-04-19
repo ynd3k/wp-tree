@@ -1,0 +1,84 @@
+/*
+  Theme Name: TREE
+  Theme URI: http://example.com/
+  Author: Author Name
+  Author URI: http://example.com/
+  Description: Description
+  Version: 1.0.0
+  License:
+  License URI:
+*/
+
+//==================
+// Foundation
+//==================
+@import './Foundation/reset';
+@import './Foundation/base';
+
+//==================
+// Layout
+//==================
+@import './Layout/header';
+@import './Layout/main';
+@import './Layout/footer';
+@import './Layout/grid';
+@import './Layout/about';
+@import './Layout/staff_list';
+@import './Layout/staff';
+@import './Layout/menu';
+@import './Layout/reserved';
+@import './Layout/contact';
+@import './Layout/news';
+@import './Layout/blog';
+@import './Layout/pagination';
+//??
+.l-contact-wp{
+    margin: 0 auto;
+    width: 60%;
+    @include mq_md(){
+        margin: 0;
+        width: 100%;
+    }
+}
+
+//==================
+// Object
+//==================
+
+//------------------
+// component
+//------------------
+@import './Object/Component/input';
+@import './Object/Component/card';
+@import './Object/Component/btn';
+@import './Object/Component/text';
+//------------------
+// project
+//------------------
+@import './Object/Project/header';
+@import './Object/Project/menu';
+@import './Object/Project/home_top_img';
+@import './Object/Project/home_about';
+@import './Object/Project/home_staff';
+@import './Object/Project/home_news';
+@import './Object/Project/sns';
+@import './Object/Project/footer';
+@import './Object/Project/section';
+@import './Object/Project/card';
+@import './Object/Project/about';
+@import './Object/Project/staff';
+@import './Object/Project/course';
+@import './Object/Project/reserved';
+@import './Object/Project/news';
+@import './Object/Project/pagination';
+
+
+//------------------
+// utility
+//------------------
+@import './Object/Utility/opacity';
+@import './Object/Utility/center_posi';
+@import './Object/Utility/border_bottom';
+@import './Object/Utility/display';
+@import './Object/Utility/fuwa';
+@import './Object/Utility/text';

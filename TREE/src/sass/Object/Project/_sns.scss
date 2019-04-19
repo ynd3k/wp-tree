@@ -1,0 +1,20 @@
+.p-sns-icon{
+    cursor: pointer;
+    transition: all .8s;
+    &:hover &__circle{
+        color: $theme-color-sub;
+        transition: all .8s;
+    }
+    &:hover &__font{
+        color: $theme-color-main;
+        transition: all .8s;
+    }
+    &__circle{
+        color: $theme-color-main;
+        transition: all .8s;
+    }
+    &__font{
+        color: #fff;
+        transition: all .8s;
+    }
+}

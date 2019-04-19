@@ -1,0 +1,16 @@
+.l-access{
+    background: $theme-color-section-bg;
+    width: 100%;
+    text-align: center;
+    padding: $space-section-inside;
+    margin-bottom: $space-section;
+    box-sizing: border-box;
+    &__info{
+        display: flex;
+        margin-bottom: $space-section-inside;
+        font-size: 0.9em;
+        @include mq_lg(){
+            flex-direction: column;
+        }
+    }
+}

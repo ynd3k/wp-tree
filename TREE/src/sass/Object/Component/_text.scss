@@ -1,0 +1,13 @@
+.c-text{
+    text-align: center;
+    box-sizing: border-box;
+    &__title{
+        font-size: 2em;
+        margin-bottom: $space-xxl;
+    }
+    &__body{
+        line-height: 2.2;
+        font-size: 0.9em;
+        margin-bottom: $space-xxl;
+    }
+}

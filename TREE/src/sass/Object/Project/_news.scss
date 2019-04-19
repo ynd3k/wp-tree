@@ -1,0 +1,15 @@
+.p-news{
+    &__date{
+        display: block;
+        margin-bottom: $space-s;
+    }
+    &__title{
+        font-size: 1.4em;
+        border-bottom: $border;
+        padding: $space-s 0;
+    }
+    &__article{
+        padding: $space-s;
+        line-height: 1.7;
+    }
+}

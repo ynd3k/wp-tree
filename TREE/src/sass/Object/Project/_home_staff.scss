@@ -1,0 +1,11 @@
+.p-top-staff{
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: $space-section;
+    &__list{
+        margin-bottom: $space-xxl;
+    }
+    &__btn{
+        width: 30%;
+    }
+}

@@ -1,0 +1,15 @@
+.p-reserved{
+    &__title{
+        font-size: 1.5em;
+        margin-bottom: $space-section-inside;
+    }
+    &__btn{
+        width: 100%;
+        font-size: 1.5em !important;
+        margin-bottom: $space-section-compo;
+    }
+    &__date{
+        text-align: left;
+        line-height: 1.7;
+    }
+}

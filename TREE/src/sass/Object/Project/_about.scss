@@ -1,0 +1,39 @@
+.p-access-info{
+    width: 50%;
+    box-sizing: border-box;
+    margin-right: $space-l;
+    @include mq_lg(){
+        width: 100%;
+        margin-bottom: $space-section-inside;
+    }
+}
+.p-info-list{
+    list-style: none;
+    text-align: left;
+    &__item{
+        border-bottom: $border;
+        padding: $space-m 0;
+        &__title{
+            width: 20%;
+            display: inline-block;
+            @include mq_md(){
+                display: block;
+                width: 100%;
+                margin-bottom: $space-s;
+            }
+        }
+        &__body{
+            width: 80%;
+        }
+    }
+}
+.p-access-map{
+    width: 50%;
+    box-sizing: border-box;
+    & iframe{
+        width: 100%;
+    }
+    @include mq_lg(){
+        width: 100%;
+    }
+}

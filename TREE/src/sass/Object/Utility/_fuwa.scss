@@ -1,0 +1,10 @@
+.u-fuwa{
+    opacity : 0;
+    transform : translate(0, 80px);
+    transition : 1.1s;
+    &--active{
+        opacity: 1;
+        transform: translate(0, 0);
+        transition : 1.1s;
+    }
+}

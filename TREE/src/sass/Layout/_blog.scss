@@ -1,0 +1,17 @@
+.l-blog-list{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: $space-section-compo;
+    grid-row-gap: $space-section-inside;
+    justify-content: center;
+    margin-bottom: $space-section;
+    @include mq_md(){
+        grid-template-columns: 50% 50%;
+    }
+    @media screen and (max-width: 580px) {
+        grid-template-columns: 100%;
+    }
+    @include mq_sm(){
+        grid-template-columns: 100%;
+    }
+}

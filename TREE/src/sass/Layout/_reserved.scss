@@ -1,0 +1,28 @@
+.l-reserved-title{
+    margin-bottom: $space-section;
+}
+.l-reserved{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: $space-section-inside;
+    justify-content: center;
+    margin-bottom: $space-section;
+    &__item{
+        text-align: center;
+        background: $theme-color-section-bg;
+        padding: $space-section-inside;
+        margin-bottom: $space-section-inside;
+        &:last-child{
+            grid-column: 1/3;
+            @include mq_md(){
+                grid-column: unset;
+            }
+        }
+        & a{
+            width: 100%;
+        }
+    }
+    @include mq_md(){
+        grid-template-columns: 100%;
+    }
+}

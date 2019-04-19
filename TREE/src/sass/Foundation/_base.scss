@@ -1,0 +1,49 @@
+//base
+$border-test: 2px solid #ddd;
+$theme-color-main: #63513b;
+$theme-color-sub: #c3b9ad;
+$theme-color-section-bg: #f3ede5;
+$space-xs: 5px;
+$space-s: 10px;
+$space-m: 15px;
+$space-l: 20px;
+$space-xl: 25px;
+$space-xxl: 30px;
+$space-section-compo: 20px;
+$space-section-inside: 30px;
+$space-section: 80px;
+$section-theme-color: #f3ede5;
+$border: 1px solid $theme-color-sub;
+
+$breakpoints: ('sm': 'screen and (max-width: 414px)',
+               'md': 'screen and (max-width: 800px)',
+               'lg': 'screen and (max-width: 1200px)',
+) !default;
+@mixin mq_sm($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin mq_md($breakpoint: md){
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin mq_lg($breakpoint: lg){
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+}
+
+.body{
+    font-family: 'Crimson Text', serif, 'ヒラギノ角ゴシック Pro';
+    background: #fff;
+    scroll-behavior: smooth;
+}
+a{
+    padding: $space-xs;
+    color: #111;
+    cursor: pointer;
+    text-decoration: none;
+}
+//base end

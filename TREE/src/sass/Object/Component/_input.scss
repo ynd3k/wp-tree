@@ -1,0 +1,18 @@
+.c-input{
+    width: 100%;
+    height: 50px;
+    font-size: 1.2em;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: $border;  
+    margin-bottom: $space-section-inside; 
+    &:focus{
+        background: $theme-color-section-bg;
+    }
+    &__msg{
+        height: 150px;
+    }
+    &__btn{
+        font-size: 1.2em !important;
+    }
+}

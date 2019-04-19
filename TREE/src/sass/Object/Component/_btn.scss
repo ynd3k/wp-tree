@@ -1,0 +1,37 @@
+.c-btn{
+    display: inline-block;
+    width: 30%;
+    font-size: 0.8em;
+    position: relative;
+    background: $theme-color-main;
+    color: #fff;
+    border: none;
+    border: 1px solid $theme-color-main;
+    padding: $space-m $space-xxl;
+    transition: all .8s;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+        background: transparent;
+        color: $theme-color-main;
+        transition: all .8s;
+    }
+    &:hover &__angle{
+        opacity: 1;
+        transition: all .5s;
+        right: 45px;
+    }
+    &__angle{
+        color: $theme-color-main;
+        opacity: 0;
+        font-size: 1.1em;
+        position: absolute;
+        right: 60px;
+        transition: all .8s;
+    }
+    @include mq_md(){
+        width: 100%;
+    }
+}

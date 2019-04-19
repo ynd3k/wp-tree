@@ -1,0 +1,28 @@
+.p-course{
+    &__title{
+        text-align: center;
+        border-bottom: $border;
+        padding: $space-s 0;
+    }
+    &__body{
+        list-style: none;
+        & li{
+            border-bottom: $border;
+            padding: $space-s $space-xs;
+            line-height: 1.7;
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1em;
+    }
+    &__detail{
+        font-size: 0.9em;
+        color: #666;
+        margin-top: $space-s;
+    }
+    &__btn{
+        display: block;
+    }
+}

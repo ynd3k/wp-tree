@@ -1,0 +1,39 @@
+.l-card-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: $space-xl;
+    text-align: center;
+    // grid-template-rows: 50px 50px;
+    // grid-row-gap: 20px;
+    @include mq_lg(){
+        grid-template-columns: 45% 45%;
+        grid-row-gap: $space-xl;
+    }
+    @include mq_md(){
+        grid-template-columns: 100%;
+    }
+}
+.l-concept{
+    margin-bottom: $space-section;
+    &__grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        // justify-content: center;
+        grid-row-gap: $space-section-inside;
+        grid-column-gap: $space-section-inside;
+        @include mq_md(){
+            grid-template-columns: 100%;
+        }
+    }
+}
+.l-course-grid{
+    margin-bottom: $space-section;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: $space-section-compo;
+    grid-row-gap: $space-section-inside;
+    @include mq_md(){
+        grid-template-columns: 100%;
+    }
+}

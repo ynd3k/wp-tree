@@ -1,0 +1,87 @@
+.p-top-menu{
+    & li{
+        display: inline-block;
+        padding: $space-s $space-l;
+        font-size: 0.8em;
+        border-bottom: 3px solid #fff;
+        &:hover{
+            border-bottom: 3px solid $theme-color-sub;
+            color: $theme-color-main;
+            cursor: pointer; 
+        }
+    }
+    &--fixed{
+        @include mq_lg(){
+            display: none;
+        }
+    }
+    @include mq_lg(){
+        padding: $space-s;
+    }
+}
+.p-top-menu-fixed{
+}
+.p-top-menu-icon{
+    font-size: 1em;
+    &--fixed{
+        @include mq_lg(){
+            display: none;
+        }
+    }
+}
+.p-sp-menu{
+    width: 35px;
+    height: 35px;
+    background: $theme-color-main;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &__line{
+        width: 60%;
+        height: 1px;
+        background-color: #fff;
+        margin: 0 auto;
+        position: absolute;
+        &:nth-child(1){
+            top: 10px;
+        }
+        &:nth-child(3){
+            bottom: 10px;
+        }
+    }
+    @include mq_lg(){
+        display: flex;
+    }
+}
+.p-sp-menu-slide{
+    // display: none; //u-d-noneで指定
+    width: 60%;
+    background: rgba($theme-color-main, 0.9);
+    position: absolute;
+    left: 0;
+    top: 60px;
+    text-align: center;
+    color: #fff;
+    list-style: none;
+    &__item, & li a{
+        display: block;
+        padding: $space-l;
+        color: #fff;
+        cursor: pointer;
+        &:hover{
+            color: $theme-color-main;
+            background: #f1f1f1;
+        }
+    }
+}
+.p-sp-menu-right{
+    &__web{
+        padding: $space-s $space-l !important;
+        margin-left: $space-s;
+        width: 100px !important;
+    }  
+}

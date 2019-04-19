@@ -1,0 +1,97 @@
+.c-blog-card{
+    cursor: pointer;
+    // min-height: 300px;
+    background: $theme-color-section-bg;
+    padding-bottom: $space-section-inside;
+    &__a{
+        padding: 0;
+        color: $theme-color-main;
+        text-decoration: none;
+    }
+    & img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    &__date{
+        padding: $space-s;
+    }
+    &__title{
+        padding: $space-s;
+        line-height: 1.7;
+    }
+}
+.c-card{
+    // display: inline-block;
+    list-style: none;
+    width: 100%;
+    // margin-right: 30px;
+    padding: $space-s 0;
+    background: $theme-color-section-bg;
+    cursor: pointer;
+    & a{
+        padding: 0;
+    }
+    &__img-wrapper{
+        display: block;
+        border: $border-test;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin: 0 auto $space-m;
+        overflow: hidden;
+        position: relative;
+        &__cover{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 50%;
+            background: rgba(11,11,11,0.4);
+            color: #fff;
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            transition: all .8s;
+            &__text{
+                margin-bottom: $space-s;
+                transform: translateY(30px);
+                transition: all .8s;
+            }
+            &__angle{
+                transform: translateY(-30px);
+                transition: all .8s;
+            }
+        }
+        &__img{
+            transition: all .8s;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__name{
+        &--sub{
+            margin-bottom: $space-m;
+        }
+    }
+    &:hover &__img-wrapper__cover{
+        transition: all .8s;
+        opacity: 1;
+        &__text{
+            transform: translateY(0px);
+            transition: all .8s;
+        }
+        &__angle{
+            transform: translateY(0px);
+            transition: all .8s;
+        }
+    }
+    &:hover &__img-wrapper__img{
+        transition: all .8s;
+        transform: rotateY(180deg);
+    }
+}

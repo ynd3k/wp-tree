@@ -1,0 +1,63 @@
+.p-staff{
+    border-top: $border;
+    border-bottom: $border;
+    padding: $space-s;
+    margin-bottom: $space-section-inside;
+    display: flex;
+    align-items: center;
+    line-height: 1.7;
+    &__name{
+        border-right: $border;
+        padding-right: $space-m;
+        &__romaji{
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        @include mq_md(){
+            width: 100%;
+            border-right: none;
+            padding-right: 0; 
+            margin-bottom: $space-section-compo;
+        }
+    }
+    &__comment{
+        margin-left: $space-m;
+        font-size: 0.9em;
+        @include mq_md(){
+            margin-left: 0;
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__btn{
+        & a{
+            width: 100% !important;
+            display: block;
+            margin-bottom: $space-section-compo;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    @include mq_md(){
+        flex-direction: column;
+        align-items: unset;
+    }
+}
+.p-schedule-table{
+    width: 100%;
+    border: $border;
+    padding: $space-s;
+    margin-bottom: $space-section-inside;
+    & caption{
+        text-align: left;
+        padding: $space-s 0;
+    }
+    & tr, td{
+        padding: $space-s $space-xxl;
+        border: $border;
+    }
+}
